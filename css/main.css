@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;500;600&display=swap');
+* {
+    margin: 0 auto;
+}
+
+html,
+body {
+    width: 90vw;
+    height: 95vh;
+    padding: 10px;
+}
+
+h1,
+h2,
+h3 p,
+a {
+    font-family: 'Encode Sans', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pageWrapper {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}
+
+
+/*navbar*/
+
+.navbar__links {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #3891B7;
+    height: 95vh;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.528);
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar_links--logo {
+    width: 80%;
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+.navbar__links--profielfoto {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.navbar__links--profielfoto img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+}
+
+.navbar_links--naamfunctie {
+    position: relative;
+    margin-bottom: 100px;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+.navbar_links--naamfunctie .profielnaam {
+    position: relative;
+}
+
+.navbar_links--naamfunctie .profielfunctie {
+    position: relative;
+}
+
+.navbar__links--buttons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    margin: auto;
+    line-height: 4rem;
+}
+
+.navbar__links--buttons .fa-user {
+    margin-right: 10px;
+}
+
+.navbar__links--buttons .fa-sign-out-alt {
+    margin-right: 10px;
+}
+
+.navbar__links--buttons a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.content__rechts {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #f0f0f0;
+    height: 95vh;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.528);
+}
