@@ -43,11 +43,29 @@ a {
     width: 80%;
     height: 100px;
     margin-bottom: 100px;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.navbar_links--logo p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar_links--logo span {
+    color: rgb(53, 242, 242);
+}
+
+.navbar_links--logo img {
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    display: block;
 }
 
 .navbar__links--profielfoto {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .navbar__links--profielfoto img {
@@ -62,7 +80,7 @@ a {
 
 .navbar_links--naamfunctie {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     color: white;
     font-size: 1.4rem;
     font-weight: 200;
@@ -78,26 +96,29 @@ a {
 
 .navbar__links--buttons {
     position: relative;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
     margin: auto;
     line-height: 4rem;
+    font-size: 1.3rem;
 }
 
-.navbar__links--buttons .fa-user {
+.navbar__links--buttons i {
     margin-right: 10px;
-}
-
-.navbar__links--buttons .fa-sign-out-alt {
-    margin-right: 10px;
+    flex-wrap: nowrap;
+    text-align: left;
+    justify-content: flex-start;
 }
 
 .navbar__links--buttons a {
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    text-align: left;
+    display: block;
+    font-weight: 200;
 }
 
 .content__rechts {
